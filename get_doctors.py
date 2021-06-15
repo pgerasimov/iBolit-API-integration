@@ -13,5 +13,4 @@ headers = {
 
 request = requests.get('https://api.ibolit.pro/public/v1/doctors', headers=headers)
 
-print('Врач')
 print(request.json())
