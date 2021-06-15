@@ -16,6 +16,5 @@ def get_token(secret, key):
     }
 
     encoded_jwt = jwt.encode(payload, clinic_secret, algorithm="HS256")
-    # token = jwt.decode(encoded_jwt, clinic_secret, algorithms=["HS256"])
 
     return encoded_jwt
